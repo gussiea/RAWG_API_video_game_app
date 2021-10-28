@@ -1,0 +1,69 @@
+//
+.search{
+  &-container {
+    width:100%;
+    height:60px;
+    background-color: #323a45;
+    display: flex;
+    justify-content: flex-start;
+    //字和输入框是在正中间
+    align-items: center;
+    //位置不随page scrolled的变化
+    position:fixed;
+    //没有任何 margin 就在最顶端
+    top: 0;
+    left:0;
+    z-index: 4;
+  }
+
+  &-form {
+    width:100%;
+    max-width: 1200px;
+    margin: 0 auto;
+  }
+
+  &-input {
+    margin-left: 10px;
+    padding: 10px;
+    width: 300px;
+    //左上和左下 出现圆角
+    border-top-left-radius: 5px;
+    border-bottom-left-radius: 5px;
+    //border:内边框
+    //outline:外边框
+    outline: none;
+    border:none;
+  }
+
+  &-button {
+    outline: none;
+    border:none;
+    background: #3f51b5;
+    padding: 10px;
+    border-left:1px solid rgba(0,0,0,0.3);
+    border-top-right-radius: 5px;
+    border-bottom-right-radius: 5px;
+    //color是字的颜色
+    color: white;
+    //字变粗但是字体不变 bold
+    font-weight: 700;
+    transition-duration: 0.3s;
+    //鼠标变成手指
+    cursor: pointer;
+    &:hover {
+      //color:字体颜色
+      color:#3f51b5;
+      background-color: white;
+      border:1px solid #3f51b5;
+    }
+  }
+
+
+}
+.logo {
+  margin-left: 10px;
+  color:white;
+  font-weight: 700;
+  cursor:pointer;
+  text-decoration: none;
+}
